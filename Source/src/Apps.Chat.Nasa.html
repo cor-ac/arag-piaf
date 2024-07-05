@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dore jQuery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="font/iconsmind-s/css/iconsminds.css" />
+    <link rel="stylesheet" href="font/simple-line-icons/css/simple-line-icons.css" />
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/vendor/bootstrap.rtl.only.min.css" />
+    <link rel="stylesheet" href="css/vendor/component-custom-switch.min.css" />
+    <link rel="stylesheet" href="css/vendor/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body id="app-container" class="menu-sub-hidden show-spinner no-footer">
+    <nav class="navbar fixed-top">
+        <div class="d-flex align-items-center navbar-left">
+            <a href="#" class="menu-button d-none d-md-block">
+                <svg class="main" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 17">
+                    <rect x="0.48" y="0.5" width="7" height="1" />
+                    <rect x="0.48" y="7.5" width="7" height="1" />
+                    <rect x="0.48" y="15.5" width="7" height="1" />
+                </svg>
+                <svg class="sub" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17">
+                    <rect x="1.56" y="0.5" width="16" height="1" />
+                    <rect x="1.56" y="7.5" width="16" height="1" />
+                    <rect x="1.56" y="15.5" width="16" height="1" />
+                </svg>
+            </a>
+            <a href="#" class="menu-button-mobile d-xs-block d-sm-block d-md-none">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 17">
+                    <rect x="0.5" y="0.5" width="25" height="1" />
+                    <rect x="0.5" y="7.5" width="25" height="1" />
+                    <rect x="0.5" y="15.5" width="25" height="1" />
+                </svg>
+            </a>
+            <div class="search" data-search-path="Pages.Search.html?q=">
+                <input placeholder="Buscar...">
+                <span class="search-icon">
+                    <i class="simple-icon-magnifier"></i>
+                </span>
+            </div>
+            <a style="display: block !important;" class="btn btn-sm btn-outline-primary ml-3 d-none d-md-inline-block" href="Apps.Chat.Nasa.html">IA </a>
+        </div>
+        <a class="navbar-logo" href="Dashboard.Default.Nasa.html">
+            <span class="logo d-none d-xs-block"></span>
+            <span class="logo-mobile d-block d-xs-none"></span>
+        </a>
+        <div class="navbar-right">
+            <div class="header-icons d-inline-block align-middle">
+                <div class="d-none d-md-inline-block align-text-bottom mr-3">
+                    <div class="custom-switch custom-switch-primary-inverse custom-switch-small pl-1" data-toggle="tooltip" data-placement="left" title="Dark Mode">
+                        <input class="custom-switch-input" id="switchDark" type="checkbox" checked>
+                        <label class="custom-switch-btn" for="switchDark"></label>
+                    </div>
+                </div>
+                <div class="position-relative d-none d-sm-inline-block">
+                    <button class="header-icon btn btn-empty" type="button" id="iconMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="simple-icon-grid"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right mt-3  position-absolute" id="iconMenuDropdown">
+                        <a href="#" class="icon-menu-item">
+                            <i class="iconsminds-equalizer d-block"></i>
+                            <span>Settings</span>
+                        </a>
+                        <a href="#" class="icon-menu-item">
+                            <i class="iconsminds-male-female d-block"></i>
+                            <span>Users</span>
+                        </a>
+                        <a href="#" class="icon-menu-item">
+                            <i class="iconsminds-puzzle d-block"></i>
+                            <span>Components</span>
+                        </a>
+                        <a href="#" class="icon-menu-item">
+                            <i class="iconsminds-bar-chart-4 d-block"></i>
+                            <span>Profits</span>
+                        </a>
+                        <a href="#" class="icon-menu-item">
+                            <i class="iconsminds-file d-block"></i>
+                            <span>Surveys</span>
+                        </a>
+                        <a href="#" class="icon-menu-item">
+                            <i class="iconsminds-suitcase d-block"></i>
+                            <span>Tasks</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="position-relative d-inline-block">
+                    <button class="header-icon btn btn-empty" type="button" id="notificationButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="simple-icon-bell"></i>
+                        <span class="count">3</span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right mt-3 position-absolute" id="notificationDropdown">
+                        <div class="scroll">
+                            <div class="d-flex flex-row mb-3 pb-3 border-bottom">
+                                <a href="#">
+                                    <img src="img/profiles/l-2.jpg" alt="Notification Image" class="img-thumbnail list-thumbnail xsmall border-0 rounded-circle" />
+                                </a>
+                                <div class="pl-3">
+                                    <a href="#">
+                                        <p class="font-weight-medium mb-1">Joisse Kaycee just sent a new comment!</p>
+                                        <p class="text-muted mb-0 text-small">09.04.2024 - 12:45</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row mb-3 pb-3 border-bottom">
+                                <a href="#">
+                                    <img src="img/profiles/l-3.jpg" alt="Notification Image" class="img-thumbnail list-thumbnail xsmall border-0 rounded-circle" />
+                                </a>
+                                <div class="pl-3">
+                                    <a href="#">
+                                        <p class="font-weight-medium mb-1">1 item is out of stock!</p>
+                                        <p class="text-muted mb-0 text-small">09.04.2024 - 12:45</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row mb-3 pb-3 border-bottom">
+                                <a href="#">
+                                    <img src="img/profiles/l-4.jpg" alt="Notification Image" class="img-thumbnail list-thumbnail xsmall border-0 rounded-circle" />
+                                </a>
+                                <div class="pl-3">
+                                    <a href="#">
+                                        <p class="font-weight-medium mb-1">New order received! It is total $147,20.</p>
+                                        <p class="text-muted mb-0 text-small">09.04.2024 - 12:45</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row mb-3 pb-3 ">
+                                <a href="#">
+                                    <img src="img/profiles/l-8.jpg" alt="Notification Image" class="img-thumbnail list-thumbnail xsmall border-0 rounded-circle" />
+                                </a>
+                                <div class="pl-3">
+                                    <a href="#">
+                                        <p class="font-weight-medium mb-1">3 items just added to wish list by a user! </p>
+                                        <p class="text-muted mb-0 text-small">09.04.2024 - 12:45</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="header-icon btn btn-empty d-noƒne d-sm-inline-block" type="button" id="fullScreenButton">
+                    <i class="simple-icon-size-fullscreen"></i>
+                    <i class="simple-icon-size-actual"></i>
+                </button>
+            </div>
+            <div class="user d-inline-block">
+                <button class="btn btn-empty p-0" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="name">María Corac</span>
+                    <span>
+                        <img alt="Profile Picture" src="img/profiles/l-1.jpg" />
+                    </span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right mt-3">
+                    <a class="dropdown-item" href="#">Account</a>
+                    <a class="dropdown-item" href="#">Features</a>
+                    <a class="dropdown-item" href="#">History</a>
+                    <a class="dropdown-item" href="#">Support</a>
+                    <a class="dropdown-item" href="#">Sign out</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="menu">
+        <div class="main-menu">
+            <div class="scroll">
+                <ul class="list-unstyled">
+                    <li class="active">
+                        <a href="#dashboard">
+                            <i class="iconsminds-shop-4"></i>
+                            <span>Dashboards</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#layouts">
+                            <i class="iconsminds-digital-drawing"></i> Control </a>
+                    </li>
+                    <li>
+                        <a href="#applications">
+                            <i class="iconsminds-air-balloon-1"></i> Gestión </a>
+                    </li>
+                    <li>
+                        <a href="#ui">
+                            <i class="iconsminds-pantone"></i> Pólizas </a>
+                    </li>
+                    <li>
+                        <a href="#menu">
+                            <i class="iconsminds-three-arrow-fork"></i> Profesionales </a>
+                    </li>
+                    <!-- <li>
+                        <a href="Blank.Page.html">
+                            <i class="iconsminds-bucket"></i> Blank Page
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://dore-jquery-docs.coloredstrategies.com" target="_blank">
+                            <i class="iconsminds-library"></i> Docs
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="sub-menu">
+            <div class="scroll">
+                <ul class="list-unstyled" data-link="dashboard">
+                    <li class="active">
+                        <a href="Dashboard.Default.Nasa.html">
+                            <i class="simple-icon-rocket"></i> <span class="d-inline-block">General</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Dashboard.Analytics.Nasa.html">
+                            <i class="simple-icon-pie-chart"></i> <span class="d-inline-block">Datos</span>
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a href="Dashboard.Ecommerce.html">
+                            <i class="simple-icon-basket-loaded"></i> <span class="d-inline-block">Ecommerce</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Dashboard.Content.html">
+                            <i class="simple-icon-doc"></i> <span class="d-inline-block">Content</span>
+                        </a>
+                    </li> -->
+                </ul>
+                <ul class="list-unstyled" data-link="layouts" id="layouts">
+                    <!-- <li>
+                        <a href="#" data-toggle="collapse" data-target="#collapseAuthorization" aria-expanded="true"
+                            aria-controls="collapseAuthorization" class="rotate-arrow-icon opacity-50">
+                            <i class="simple-icon-arrow-down"></i> <span class="d-inline-block">Authorization</span>
+                        </a> 
+                        <div id="collapseAuthorization" class="collapse show">
+                            <ul class="list-unstyled inner-level-menu">
+                                <li>
+                                    <a href="Pages.Auth.Login.html">
+                                        <i class="simple-icon-user-following"></i> <span
+                                            class="d-inline-block">Login</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Pages.Auth.Register.html">
+                                        <i class="simple-icon-user-follow"></i> <span
+                                            class="d-inline-block">Register</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Pages.Auth.ForgotPassword.html">
+                                        <i class="simple-icon-user-unfollow"></i> <span class="d-inline-block">Forgot
+                                            Password</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li> -->
+                    <li>
+                        <!-- <a href="#" data-toggle="collapse" data-target="#collapseProduct" aria-expanded="true"
+                            aria-controls="collapseProduct" class="rotate-arrow-icon opacity-50">
+                            <i class="simple-icon-arrow-down"></i> <span class="d-inline-block">Product</span>
+                        </a> -->
+                        <div id="collapseProduct" class="collapse show">
+                            <ul class="list-unstyled inner-level-menu">
+                                <li>
+                                    <a href="Pages.Product.List.html">
+                                        <i class="simple-icon-credit-card"></i> <span class="d-inline-block">Prepartes Pendientes (4)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Pages.Product.Thumbs.html">
+                                        <i class="simple-icon-list"></i> <span class="d-inline-block">Prescripción</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Pages.Product.Images.html">
+                                        <i class="simple-icon-grid"></i> <span class="d-inline-block">Abonos Pendientes (5)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Pages.Product.Detail.html">
+                                        <i class="simple-icon-book-open"></i> <span class="d-inline-block">Docs Nuevos Plus</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- <a href="#" data-toggle="collapse" data-target="#collapseProfile" aria-expanded="true"
+                            aria-controls="collapseProfile" class="rotate-arrow-icon opacity-50">
+                            <i class="simple-icon-arrow-down"></i> <span class="d-inline-block">Profile</span>
+                        </a> -->
+                        <div id="collapseProfile" class="collapse show">
+                            <ul class="list-unstyled inner-level-menu">
+                                <li>
+                                    <a href="Pages.Profile.Social.html">
+                                        <i class="simple-icon-share"></i> <span class="d-inline-block">Servicios Pendientes</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Pages.Profile.Portfolio.html">
+                                        <i class="simple-icon-link"></i> <span class="d-inline-block">Pdte. Evaluacion</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- <a href="#" data-toggle="collapse" data-target="#collapseBlog" aria-expanded="true"
+                            aria-controls="collapseBlog" class="rotate-arrow-icon opacity-50">
+                            <i class="simple-icon-arrow-down"></i> <span class="d-inline-block">Blog</span>
+                        </a> -->
+                        <div id="collapseBlog" class="collapse show">
+                            <ul class="list-unstyled inner-level-menu">
+                                <li>
+                                    <a href="Pages.Blog.html">
+                                        <i class="simple-icon-list"></i> <span class="d-inline-block">Pendiente Judicializar</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Pages.Blog.Detail.html">
+                                        <i class="simple-icon-book-open"></i> <span class="d-inline-block">Pdte Evaluación</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Pages.Blog.Detail.Alt.html">
+                                        <i class="simple-icon-picture"></i> <span class="d-inline-block">Devoluciones Equipos</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- <a href="#" data-toggle="collapse" data-target="#collapseMisc" aria-expanded="true"
+                            aria-controls="collapseMisc" class="rotate-arrow-icon opacity-50">
+                            <i class="simple-icon-arrow-down"></i> <span class="d-inline-block">Miscellaneous</span>
+                        </a> -->
+                        <div id="collapseMisc" class="collapse show">
+                            <ul class="list-unstyled inner-level-menu">
+                                <li>
+                                    <a href="Pages.Misc.Coming.Soon.html">
+                                        <i class="simple-icon-hourglass"></i> <span class="d-inline-block">Pendiente Judicializar</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Pages.Misc.Error.html">
+                                        <i class="simple-icon-exclamation"></i> <span class="d-inline-block">Retornados Asesoria</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Pages.Misc.Faq.html">
+                                        <i class="simple-icon-question"></i> <span class="d-inline-block">Otras Consultas</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Pages.Misc.Invoice.html">
+                                        <i class="simple-icon-bag"></i> <span class="d-inline-block">Solicitud Extenalización</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Pages.Misc.Knowledge.Base.html">
+                                        <i class="simple-icon-graduation"></i> <span class="d-inline-block">Libre Elección</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Pages.Misc.Mailing.html">
+                                        <i class="simple-icon-envelope-open"></i> <span class="d-inline-block">Control Real Lesiones</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Pages.Misc.Pricing.html">
+                                        <i class="simple-icon-diamond"></i> <span class="d-inline-block">Seguimiento Rentas</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Pages.Misc.Search.html">
+                                        <i class="simple-icon-magnifier"></i> <span class="d-inline-block">Comunicaciones</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Apps.MediaLibrary.html">
+                                        <i class="simple-icon-picture"></i> <span class="d-inline-block">Solicitudes Alto Riesgo</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Apps.Todo.List.html">
+                                        <i class="simple-icon-check"></i> <span class="d-inline-block">Prepartes Pdtes. Distribuir</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Apps.Survey.List.html">
+                                        <i class="simple-icon-calculator"></i> <span class="d-inline-block">Prepartes Emisión</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Apps.Chat.html">
+                                        <i class="simple-icon-bubbles"></i> <span class="d-inline-block">Solicitud de Bufetes</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="list-unstyled" data-link="applications">
+                    <li>
+                        <a href="Apps.MediaLibrary.html">
+                            <i class="simple-icon-key"></i> <span class="d-inline-block">Referencias</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Apps.Todo.List.html">
+                            <i class="simple-icon-check"></i> <span class="d-inline-block">Mantenimientos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Apps.Survey.List.html">
+                            <i class="simple-icon-calculator"></i> <span class="d-inline-block">Preparte Para Distribución</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Apps.Chat.html">
+                            <i class="iconsminds-envelope"></i> <span class="d-inline-block">Email de Entrada</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Apps.Chat.html">
+                            <i class="iconsminds-dollar-sign-2"></i> <span class="d-inline-block">Pagos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Apps.Chat.html">
+                            <i class="iconsminds-gears"></i> <span class="d-inline-block">Procesos Automáticos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Ui.Forms.Layouts.Nasa.html">
+                            <i class="simple-icon-check"></i> <span class="d-inline-block">Alta Preparte</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="list-unstyled" data-link="ui">
+                    <li>
+                        <a href="#" data-toggle="collapse" data-target="#collapseForms" aria-expanded="true" aria-controls="collapseForms" class="rotate-arrow-icon opacity-50">
+                            <i class="simple-icon-arrow-down"></i> <span class="d-inline-block">Forms</span>
+                        </a>
+                        <div id="collapseForms" class="collapse show">
+                            <ul class="list-unstyled inner-level-menu">
+                                <li>
+                                    <a href="Ui.Forms.Components.html">
+                                        <i class="simple-icon-event"></i> <span class="d-inline-block">Components</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Ui.Forms.Layouts.html">
+                                        <i class="simple-icon-doc"></i> <span class="d-inline-block">Layouts</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Ui.Forms.Validation.html">
+                                        <i class="simple-icon-check"></i> <span class="d-inline-block">Validation</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Ui.Forms.Wizard.html">
+                                        <i class="simple-icon-magic-wand"></i> <span class="d-inline-block">Wizard</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="collapse" data-target="#collapseDataTables" aria-expanded="true" aria-controls="collapseDataTables" class="rotate-arrow-icon opacity-50">
+                            <i class="simple-icon-arrow-down"></i> <span class="d-inline-block">Datatables</span>
+                        </a>
+                        <div id="collapseDataTables" class="collapse show">
+                            <ul class="list-unstyled inner-level-menu">
+                                <li>
+                                    <a href="Ui.Datatables.Rows.html">
+                                        <i class="simple-icon-screen-desktop"></i> <span class="d-inline-block">Full Page UI</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Ui.Datatables.Scroll.html">
+                                        <i class="simple-icon-mouse"></i> <span class="d-inline-block">Scrollable</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Ui.Datatables.Pagination.html">
+                                        <i class="simple-icon-notebook"></i> <span class="d-inline-block">Pagination</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Ui.Datatables.Default.html">
+                                        <i class="simple-icon-grid"></i> <span class="d-inline-block">Default</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="collapse" data-target="#collapseComponents" aria-expanded="true" aria-controls="collapseComponents" class="rotate-arrow-icon opacity-50">
+                            <i class="simple-icon-arrow-down"></i> <span class="d-inline-block">Components</span>
+                        </a>
+                        <div id="collapseComponents" class="collapse show">
+                            <ul class="list-unstyled inner-level-menu">
+                                <li>
+                                    <a href="Ui.Components.Alerts.html">
+                                        <i class="simple-icon-bell"></i> <span class="d-inline-block">Alerts</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Ui.Components.Badges.html">
+                                        <i class="simple-icon-badge"></i> <span class="d-inline-block">Badges</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Ui.Components.Buttons.html">
+                                        <i class="simple-icon-control-play"></i> <span class="d-inline-block">Buttons</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Ui.Components.Cards.html">
+                                        <i class="simple-icon-layers"></i> <span class="d-inline-block">Cards</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Ui.Components.Carousel.html">
+                                        <i class="simple-icon-picture"></i> <span class="d-inline-block">Carousel</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Ui.Components.Charts.html">
+                                        <i class="simple-icon-chart"></i> <span class="d-inline-block">Charts</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Ui.Components.Collapse.html">
+                                        <i class="simple-icon-arrow-up"></i> <span class="d-inline-block">Collapse</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Ui.Components.Dropdowns.html">
+                                        <i class="simple-icon-arrow-down"></i> <span class="d-inline-block">Dropdowns</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Ui.Components.Editors.html">
+                                        <i class="simple-icon-book-open"></i> <span class="d-inline-block">Editors</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Ui.Components.Icons.html">
+                                        <i class="simple-icon-star"></i> <span class="d-inline-block">Icons</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Ui.Components.InputGroups.html">
+                                        <i class="simple-icon-note"></i> <span class="d-inline-block">Input Groups</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Ui.Components.Jumbotron.html">
+                                        <i class="simple-icon-screen-desktop"></i> <span class="d-inline-block">Jumbotron</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Ui.Components.Modal.html">
+                                        <i class="simple-icon-docs"></i> <span class="d-inline-block">Modal</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Ui.Components.Navigation.html">
+                                        <i class="simple-icon-cursor"></i> <span class="d-inline-block">Navigation</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Ui.Components.PopoverandTooltip.html">
+                                        <i class="simple-icon-pin"></i> <span class="d-inline-block">Popover & Tooltip</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Ui.Components.Sortable.html">
+                                        <i class="simple-icon-shuffle"></i> <span class="d-inline-block">Sortable</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Ui.Components.Tables.html">
+                                        <i class="simple-icon-grid"></i> <span class="d-inline-block">Tables</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="list-unstyled" data-link="menu" id="menuTypes">
+                    <li>
+                        <a href="#" data-toggle="collapse" data-target="#collapseMenuTypes" aria-expanded="true" aria-controls="collapseMenuTypes" class="rotate-arrow-icon">
+                            <i class="simple-icon-arrow-down"></i> <span class="d-inline-block">Menu Types</span>
+                        </a>
+                        <div id="collapseMenuTypes" class="collapse show" data-parent="#menuTypes">
+                            <ul class="list-unstyled inner-level-menu">
+                                <li>
+                                    <a href="Menu.Default.html">
+                                        <i class="simple-icon-control-pause"></i> <span class="d-inline-block">Default</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Menu.Subhidden.html">
+                                        <i class="simple-icon-arrow-left mi-subhidden"></i> <span class="d-inline-block">Subhidden</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Menu.Hidden.html">
+                                        <i class="simple-icon-control-start mi-hidden"></i> <span class="d-inline-block">Hidden</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Menu.Mainhidden.html">
+                                        <i class="simple-icon-control-rewind mi-hidden"></i> <span class="d-inline-block">Mainhidden</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="collapse" data-target="#collapseMenuLevel" aria-expanded="true" aria-controls="collapseMenuLevel" class="rotate-arrow-icon collapsed">
+                            <i class="simple-icon-arrow-down"></i> <span class="d-inline-block">Menu Levels</span>
+                        </a>
+                        <div id="collapseMenuLevel" class="collapse" data-parent="#menuTypes">
+                            <ul class="list-unstyled inner-level-menu">
+                                <li>
+                                    <a href="#">
+                                        <i class="simple-icon-layers"></i> <span class="d-inline-block">Sub Level</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" data-toggle="collapse" data-target="#collapseMenuLevel2" aria-expanded="true" aria-controls="collapseMenuLevel2" class="rotate-arrow-icon collapsed">
+                                        <i class="simple-icon-arrow-down"></i> <span class="d-inline-block">Another Level</span>
+                                    </a>
+                                    <div id="collapseMenuLevel2" class="collapse">
+                                        <ul class="list-unstyled inner-level-menu">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="simple-icon-layers"></i> <span class="d-inline-block">Sub Level</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="collapse" data-target="#collapseMenuDetached" aria-expanded="true" aria-controls="collapseMenuDetached" class="rotate-arrow-icon collapsed">
+                            <i class="simple-icon-arrow-down"></i> <span class="d-inline-block">Detached</span>
+                        </a>
+                        <div id="collapseMenuDetached" class="collapse">
+                            <ul class="list-unstyled inner-level-menu">
+                                <li>
+                                    <a href="#">
+                                        <i class="simple-icon-layers"></i> <span class="d-inline-block">Sub Level</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="container-fluid">
+            <div class="row app-row">
+                <div class="col-12 chat-app">
+                    <div class="d-flex flex-row justify-content-between mb-3 chat-heading-container">
+                        <div class="d-flex flex-row chat-heading">
+                            
+                            <div class=" d-flex min-width-zero">
+                                <div style="padding: 0;" class="card-body pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
+                                    <div class="min-width-zero">
+                                        <h1 style="padding-bottom: 0; margin-bottom: 0;">
+                                            Inteligencia Artificial
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="separator mb-5"></div>
+                    <div class="scroll">
+                        <div class="scroll-content">
+                            <div class="card d-inline-block mb-3 float-left mr-2">
+                                <div class="position-absolute pt-1 pr-2 r-0">
+                                    <span class="text-extra-small text-muted">09:25</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex flex-row pb-2">
+                                        <!-- <a class="d-flex" href="#">
+                                            <img alt="Profile Picture" src="img/profiles/l-1.jpg"
+                                                class="img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
+                                        </a> -->
+                                        <div class=" d-flex flex-grow-1 min-width-zero">
+                                            <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
+                                                <div class="min-width-zero">
+                                                    <h5 style="display: inline-block;
+                                                    background: #f4f4f4;
+                                                    border-radius: 1.5rem;
+                                                    padding: .625rem 1.25rem;" class="card-title">Información sobre polizas</h5>
+                                                    <div class="w-full text-token-text-primary" dir="auto" data-testid="conversation-turn-3" data-scroll-anchor="true">
+                                                        <div style="padding-left: 0 !important;" class="py-2 juice:py-[18px] px-3 text-base md:px-4 m-auto md:px-5 lg:px-1 xl:px-5">
+                                                            <div style="display: flex;" class="mx-auto flex flex-1 gap-3 text-base juice:gap-4 juice:md:gap-5 juice:lg:gap-6 md:max-w-3xl lg:max-w-[40rem] xl:max-w-[48rem]">
+                                                                <div style="width: 30px; margin-right: 20px;" class="flex-shrink-0 flex flex-col relative items-end">
+                                                                    <div>
+                                                                        <div class="pt-0.5 juice:pt-0">
+                                                                            <div class="gizmo-bot-avatar flex h-6 w-6 items-center justify-center overflow-hidden rounded-full juice:h-8 juice:w-8">
+                                                                                <div class="relative p-1 rounded-sm flex items-center justify-center bg-token-main-surface-primary text-token-text-primary h-8 w-8">
+                                                                                    <svg width="100%" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-md" role="img"><text x="-9999" y="-9999">ChatGPT</text>
+                                                                                        <path d="M37.5324 16.8707C37.9808 15.5241 38.1363 14.0974 37.9886 12.6859C37.8409 11.2744 37.3934 9.91076 36.676 8.68622C35.6126 6.83404 33.9882 5.3676 32.0373 4.4985C30.0864 3.62941 27.9098 3.40259 25.8215 3.85078C24.8796 2.7893 23.7219 1.94125 22.4257 1.36341C21.1295 0.785575 19.7249 0.491269 18.3058 0.500197C16.1708 0.495044 14.0893 1.16803 12.3614 2.42214C10.6335 3.67624 9.34853 5.44666 8.6917 7.47815C7.30085 7.76286 5.98686 8.3414 4.8377 9.17505C3.68854 10.0087 2.73073 11.0782 2.02839 12.312C0.956464 14.1591 0.498905 16.2988 0.721698 18.4228C0.944492 20.5467 1.83612 22.5449 3.268 24.1293C2.81966 25.4759 2.66413 26.9026 2.81182 28.3141C2.95951 29.7256 3.40701 31.0892 4.12437 32.3138C5.18791 34.1659 6.8123 35.6322 8.76321 36.5013C10.7141 37.3704 12.8907 37.5973 14.9789 37.1492C15.9208 38.2107 17.0786 39.0587 18.3747 39.6366C19.6709 40.2144 21.0755 40.5087 22.4946 40.4998C24.6307 40.5054 26.7133 39.8321 28.4418 38.5772C30.1704 37.3223 31.4556 35.5506 32.1119 33.5179C33.5027 33.2332 34.8167 32.6547 35.9659 31.821C37.115 30.9874 38.0728 29.9178 38.7752 28.684C39.8458 26.8371 40.3023 24.6979 40.0789 22.5748C39.8556 20.4517 38.9639 18.4544 37.5324 16.8707ZM22.4978 37.8849C20.7443 37.8874 19.0459 37.2733 17.6994 36.1501C17.7601 36.117 17.8666 36.0586 17.936 36.0161L25.9004 31.4156C26.1003 31.3019 26.2663 31.137 26.3813 30.9378C26.4964 30.7386 26.5563 30.5124 26.5549 30.2825V19.0542L29.9213 20.998C29.9389 21.0068 29.9541 21.0198 29.9656 21.0359C29.977 21.052 29.9842 21.0707 29.9867 21.0902V30.3889C29.9842 32.375 29.1946 34.2791 27.7909 35.6841C26.3872 37.0892 24.4838 37.8806 22.4978 37.8849ZM6.39227 31.0064C5.51397 29.4888 5.19742 27.7107 5.49804 25.9832C5.55718 26.0187 5.66048 26.0818 5.73461 26.1244L13.699 30.7248C13.8975 30.8408 14.1233 30.902 14.3532 30.902C14.583 30.902 14.8088 30.8408 15.0073 30.7248L24.731 25.1103V28.9979C24.7321 29.0177 24.7283 29.0376 24.7199 29.0556C24.7115 29.0736 24.6988 29.0893 24.6829 29.1012L16.6317 33.7497C14.9096 34.7416 12.8643 35.0097 10.9447 34.4954C9.02506 33.9811 7.38785 32.7263 6.39227 31.0064ZM4.29707 13.6194C5.17156 12.0998 6.55279 10.9364 8.19885 10.3327C8.19885 10.4013 8.19491 10.5228 8.19491 10.6071V19.808C8.19351 20.0378 8.25334 20.2638 8.36823 20.4629C8.48312 20.6619 8.64893 20.8267 8.84863 20.9404L18.5723 26.5542L15.206 28.4979C15.1894 28.5089 15.1703 28.5155 15.1505 28.5173C15.1307 28.5191 15.1107 28.516 15.0924 28.5082L7.04046 23.8557C5.32135 22.8601 4.06716 21.2235 3.55289 19.3046C3.03862 17.3858 3.30624 15.3413 4.29707 13.6194ZM31.955 20.0556L22.2312 14.4411L25.5976 12.4981C25.6142 12.4872 25.6333 12.4805 25.6531 12.4787C25.6729 12.4769 25.6928 12.4801 25.7111 12.4879L33.7631 17.1364C34.9967 17.849 36.0017 18.8982 36.6606 20.1613C37.3194 21.4244 37.6047 22.849 37.4832 24.2684C37.3617 25.6878 36.8382 27.0432 35.9743 28.1759C35.1103 29.3086 33.9415 30.1717 32.6047 30.6641C32.6047 30.5947 32.6047 30.4733 32.6047 30.3889V21.188C32.6066 20.9586 32.5474 20.7328 32.4332 20.5338C32.319 20.3348 32.154 20.1698 31.955 20.0556ZM35.3055 15.0128C35.2464 14.9765 35.1431 14.9142 35.069 14.8717L27.1045 10.2712C26.906 10.1554 26.6803 10.0943 26.4504 10.0943C26.2206 10.0943 25.9948 10.1554 25.7963 10.2712L16.0726 15.8858V11.9982C16.0715 11.9783 16.0753 11.9585 16.0837 11.9405C16.0921 11.9225 16.1048 11.9068 16.1207 11.8949L24.1719 7.25025C25.4053 6.53903 26.8158 6.19376 28.2383 6.25482C29.6608 6.31589 31.0364 6.78077 32.2044 7.59508C33.3723 8.40939 34.2842 9.53945 34.8334 10.8531C35.3826 12.1667 35.5464 13.6095 35.3055 15.0128ZM14.2424 21.9419L10.8752 19.9981C10.8576 19.9893 10.8423 19.9763 10.8309 19.9602C10.8195 19.9441 10.8122 19.9254 10.8098 19.9058V10.6071C10.8107 9.18295 11.2173 7.78848 11.9819 6.58696C12.7466 5.38544 13.8377 4.42659 15.1275 3.82264C16.4173 3.21869 17.8524 2.99464 19.2649 3.1767C20.6775 3.35876 22.0089 3.93941 23.1034 4.85067C23.0427 4.88379 22.937 4.94215 22.8668 4.98473L14.9024 9.58517C14.7025 9.69878 14.5366 9.86356 14.4215 10.0626C14.3065 10.2616 14.2466 10.4877 14.2479 10.7175L14.2424 21.9419ZM16.071 17.9991L20.4018 15.4978L24.7325 17.9975V22.9985L20.4018 25.4983L16.071 22.9985V17.9991Z" fill="currentColor"></path>
+                                                                                    </svg>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="group/conversation-turn relative flex w-full min-w-0 flex-col agent-turn">
+                                                                    <div class="flex-col gap-1 md:gap-3">
+                                                                        <div class="flex flex-grow flex-col max-w-full">
+                                                                            <div data-message-author-role="assistant" data-message-id="58420b8b-a9b0-494b-95b9-86dfc1398255" dir="auto" class="min-h-[20px] text-message flex flex-col items-start whitespace-pre-wrap break-words [.text-message+&amp;]:mt-5 juice:w-full juice:items-end overflow-x-auto gap-2">
+                                                                                <div class="flex w-full flex-col gap-1 juice:empty:hidden juice:first:pt-[3px]">
+                                                                                    <div class="markdown prose w-full break-words dark:prose-invert light">
+                                                                                        <p>Las pólizas son documentos que formalizan un contrato de seguros entre una compañía aseguradora y una persona o entidad asegurada. Aquí tienes información básica sobre las pólizas de seguros:</p>
+                                                                                        <ol>
+                                                                                            <li>
+                                                                                                <p><strong>Partes de una póliza</strong>:</p>
+                                                                                                <ul>
+                                                                                                    <li><strong>Declaraciones</strong>: Información básica del asegurado y del asegurador, incluyendo datos personales y detalles específicos del riesgo asegurado.</li>
+                                                                                                    <li><strong>Condiciones</strong>: Reglas y requisitos que ambas partes deben seguir.</li>
+                                                                                                    <li><strong>Cobertura</strong>: Detalle de los riesgos cubiertos por la póliza.</li>
+                                                                                                    <li><strong>Exclusiones</strong>: Situaciones o eventos que no están cubiertos por la póliza.</li>
+                                                                                                    <li><strong>Endosos</strong>: Modificaciones o adiciones a la cobertura original de la póliza.</li>
+                                                                                                </ul>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <p><strong>Tipos de pólizas</strong>:</p>
+                                                                                                <ul>
+                                                                                                    <li><strong>Pólizas de seguro de vida</strong>: Proveen un beneficio financiero a los beneficiarios designados tras la muerte del asegurado.</li>
+                                                                                                    <li><strong>Pólizas de seguro de salud</strong>: Cubren gastos médicos y hospitalarios.</li>
+                                                                                                    <li><strong>Pólizas de seguro de automóvil</strong>: Protegen contra daños y pérdidas relacionados con vehículos.</li>
+                                                                                                    <li><strong>Pólizas de seguro de hogar</strong>: Cubren daños a la propiedad y pertenencias personales dentro de una vivienda.</li>
+                                                                                                    <li><strong>Pólizas de seguro de responsabilidad civil</strong>: Protegen contra reclamaciones por daños a terceros.</li>
+                                                                                                </ul>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <p><strong>Proceso de contratación</strong>:</p>
+                                                                                                <ul>
+                                                                                                    <li><strong>Solicitud</strong>: El potencial asegurado llena una solicitud proporcionando información detallada sobre el riesgo que se desea asegurar.</li>
+                                                                                                    <li><strong>Evaluación del riesgo</strong>: La compañía aseguradora evalúa el riesgo asociado al solicitante.</li>
+                                                                                                    <li><strong>Aprobación y emisión</strong>: Si el riesgo es aceptable, la aseguradora emite la póliza, formalizando el contrato.</li>
+                                                                                                </ul>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <p><strong>Importancia de las pólizas</strong>:</p>
+                                                                                                <ul>
+                                                                                                    <li><strong>Protección financiera</strong>: Ayudan a mitigar el impacto financiero de eventos inesperados.</li>
+                                                                                                    <li><strong>Paz mental</strong>: Proporcionan tranquilidad al saber que se cuenta con un respaldo en caso de emergencias.</li>
+                                                                                                    <li><strong>Cumplimiento legal</strong>: En algunos casos, como el seguro de automóvil, es obligatorio por ley.</li>
+                                                                                                </ul>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <p><strong>Aspectos a considerar</strong>:</p>
+                                                                                                <ul>
+                                                                                                    <li><strong>Prima</strong>: El costo del seguro que el asegurado debe pagar, que puede ser mensual, trimestral, anual, etc.</li>
+                                                                                                    <li><strong>Deducible</strong>: La cantidad que el asegurado debe pagar de su bolsillo antes de que el seguro cubra el resto.</li>
+                                                                                                    <li><strong>Límites de cobertura</strong>: La cantidad máxima que la aseguradora pagará por una reclamación cubierta.</li>
+                                                                                                </ul>
+                                                                                            </li>
+                                                                                        </ol>
+                                                                                        <p>Si necesitas información más específica sobre algún tipo de póliza o detalles adicionales, no dudes en preguntar.</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="pr-2 lg:pr-0"></div>
+                                                                        <div class="mt-3 w-full empty:hidden">
+                                                                            <div class="text-center"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="chat-text-left">
+                                        <p class="mb-0 text-semi-muted"> What do you think about our plans for this product launch? </p>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="card d-inline-block mb-3 float-left mr-2">
+                                <div class="position-absolute pt-1 pr-2 r-0">
+                                    <span class="text-extra-small text-muted">09:30</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex flex-row pb-2">
+                                        <!-- <a class="d-flex" href="#">
+                                            <img alt="Profile Picture" src="img/profiles/l-1.jpg"
+                                                class="img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
+                                        </a> -->
+                                        <div class=" d-flex flex-grow-1 min-width-zero">
+                                            <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
+                                                <div class="min-width-zero">
+                                                    <h5 style="display: inline-block;
+                                                    background: #f4f4f4;
+                                                    border-radius: 1.5rem;
+                                                    padding: .625rem 1.25rem;" class="card-title">¿que son las declaraciones?</h5>
+                                                    <div class="w-full text-token-text-primary" dir="auto" data-testid="conversation-turn-3" data-scroll-anchor="true">
+                                                        <div style="padding-left: 0 !important;" class="py-2 juice:py-[18px] px-3 text-base md:px-4 m-auto md:px-5 lg:px-1 xl:px-5">
+                                                            <div style="display: flex;" class="mx-auto flex flex-1 gap-3 text-base juice:gap-4 juice:md:gap-5 juice:lg:gap-6 md:max-w-3xl lg:max-w-[40rem] xl:max-w-[48rem]">
+                                                                <div style="width: 30px; margin-right: 20px;" class="flex-shrink-0 flex flex-col relative items-end">
+                                                                    <div>
+                                                                        <div class="pt-0.5 juice:pt-0">
+                                                                            <div class="gizmo-bot-avatar flex h-6 w-6 items-center justify-center overflow-hidden rounded-full juice:h-8 juice:w-8">
+                                                                                <div class="relative p-1 rounded-sm flex items-center justify-center bg-token-main-surface-primary text-token-text-primary h-8 w-8">
+                                                                                    <svg width="100%" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-md" role="img"><text x="-9999" y="-9999">ChatGPT</text>
+                                                                                        <path d="M37.5324 16.8707C37.9808 15.5241 38.1363 14.0974 37.9886 12.6859C37.8409 11.2744 37.3934 9.91076 36.676 8.68622C35.6126 6.83404 33.9882 5.3676 32.0373 4.4985C30.0864 3.62941 27.9098 3.40259 25.8215 3.85078C24.8796 2.7893 23.7219 1.94125 22.4257 1.36341C21.1295 0.785575 19.7249 0.491269 18.3058 0.500197C16.1708 0.495044 14.0893 1.16803 12.3614 2.42214C10.6335 3.67624 9.34853 5.44666 8.6917 7.47815C7.30085 7.76286 5.98686 8.3414 4.8377 9.17505C3.68854 10.0087 2.73073 11.0782 2.02839 12.312C0.956464 14.1591 0.498905 16.2988 0.721698 18.4228C0.944492 20.5467 1.83612 22.5449 3.268 24.1293C2.81966 25.4759 2.66413 26.9026 2.81182 28.3141C2.95951 29.7256 3.40701 31.0892 4.12437 32.3138C5.18791 34.1659 6.8123 35.6322 8.76321 36.5013C10.7141 37.3704 12.8907 37.5973 14.9789 37.1492C15.9208 38.2107 17.0786 39.0587 18.3747 39.6366C19.6709 40.2144 21.0755 40.5087 22.4946 40.4998C24.6307 40.5054 26.7133 39.8321 28.4418 38.5772C30.1704 37.3223 31.4556 35.5506 32.1119 33.5179C33.5027 33.2332 34.8167 32.6547 35.9659 31.821C37.115 30.9874 38.0728 29.9178 38.7752 28.684C39.8458 26.8371 40.3023 24.6979 40.0789 22.5748C39.8556 20.4517 38.9639 18.4544 37.5324 16.8707ZM22.4978 37.8849C20.7443 37.8874 19.0459 37.2733 17.6994 36.1501C17.7601 36.117 17.8666 36.0586 17.936 36.0161L25.9004 31.4156C26.1003 31.3019 26.2663 31.137 26.3813 30.9378C26.4964 30.7386 26.5563 30.5124 26.5549 30.2825V19.0542L29.9213 20.998C29.9389 21.0068 29.9541 21.0198 29.9656 21.0359C29.977 21.052 29.9842 21.0707 29.9867 21.0902V30.3889C29.9842 32.375 29.1946 34.2791 27.7909 35.6841C26.3872 37.0892 24.4838 37.8806 22.4978 37.8849ZM6.39227 31.0064C5.51397 29.4888 5.19742 27.7107 5.49804 25.9832C5.55718 26.0187 5.66048 26.0818 5.73461 26.1244L13.699 30.7248C13.8975 30.8408 14.1233 30.902 14.3532 30.902C14.583 30.902 14.8088 30.8408 15.0073 30.7248L24.731 25.1103V28.9979C24.7321 29.0177 24.7283 29.0376 24.7199 29.0556C24.7115 29.0736 24.6988 29.0893 24.6829 29.1012L16.6317 33.7497C14.9096 34.7416 12.8643 35.0097 10.9447 34.4954C9.02506 33.9811 7.38785 32.7263 6.39227 31.0064ZM4.29707 13.6194C5.17156 12.0998 6.55279 10.9364 8.19885 10.3327C8.19885 10.4013 8.19491 10.5228 8.19491 10.6071V19.808C8.19351 20.0378 8.25334 20.2638 8.36823 20.4629C8.48312 20.6619 8.64893 20.8267 8.84863 20.9404L18.5723 26.5542L15.206 28.4979C15.1894 28.5089 15.1703 28.5155 15.1505 28.5173C15.1307 28.5191 15.1107 28.516 15.0924 28.5082L7.04046 23.8557C5.32135 22.8601 4.06716 21.2235 3.55289 19.3046C3.03862 17.3858 3.30624 15.3413 4.29707 13.6194ZM31.955 20.0556L22.2312 14.4411L25.5976 12.4981C25.6142 12.4872 25.6333 12.4805 25.6531 12.4787C25.6729 12.4769 25.6928 12.4801 25.7111 12.4879L33.7631 17.1364C34.9967 17.849 36.0017 18.8982 36.6606 20.1613C37.3194 21.4244 37.6047 22.849 37.4832 24.2684C37.3617 25.6878 36.8382 27.0432 35.9743 28.1759C35.1103 29.3086 33.9415 30.1717 32.6047 30.6641C32.6047 30.5947 32.6047 30.4733 32.6047 30.3889V21.188C32.6066 20.9586 32.5474 20.7328 32.4332 20.5338C32.319 20.3348 32.154 20.1698 31.955 20.0556ZM35.3055 15.0128C35.2464 14.9765 35.1431 14.9142 35.069 14.8717L27.1045 10.2712C26.906 10.1554 26.6803 10.0943 26.4504 10.0943C26.2206 10.0943 25.9948 10.1554 25.7963 10.2712L16.0726 15.8858V11.9982C16.0715 11.9783 16.0753 11.9585 16.0837 11.9405C16.0921 11.9225 16.1048 11.9068 16.1207 11.8949L24.1719 7.25025C25.4053 6.53903 26.8158 6.19376 28.2383 6.25482C29.6608 6.31589 31.0364 6.78077 32.2044 7.59508C33.3723 8.40939 34.2842 9.53945 34.8334 10.8531C35.3826 12.1667 35.5464 13.6095 35.3055 15.0128ZM14.2424 21.9419L10.8752 19.9981C10.8576 19.9893 10.8423 19.9763 10.8309 19.9602C10.8195 19.9441 10.8122 19.9254 10.8098 19.9058V10.6071C10.8107 9.18295 11.2173 7.78848 11.9819 6.58696C12.7466 5.38544 13.8377 4.42659 15.1275 3.82264C16.4173 3.21869 17.8524 2.99464 19.2649 3.1767C20.6775 3.35876 22.0089 3.93941 23.1034 4.85067C23.0427 4.88379 22.937 4.94215 22.8668 4.98473L14.9024 9.58517C14.7025 9.69878 14.5366 9.86356 14.4215 10.0626C14.3065 10.2616 14.2466 10.4877 14.2479 10.7175L14.2424 21.9419ZM16.071 17.9991L20.4018 15.4978L24.7325 17.9975V22.9985L20.4018 25.4983L16.071 22.9985V17.9991Z" fill="currentColor"></path>
+                                                                                    </svg>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="group/conversation-turn relative flex w-full min-w-0 flex-col agent-turn">
+                                                                    <div class="flex-col gap-1 md:gap-3">
+                                                                        <div class="flex flex-grow flex-col max-w-full">
+                                                                            <div data-message-author-role="assistant" data-message-id="049712b4-028b-47a9-beb3-3c8d11b4b29b" dir="auto" class="min-h-[20px] text-message flex flex-col items-start whitespace-pre-wrap break-words [.text-message+&amp;]:mt-5 juice:w-full juice:items-end overflow-x-auto gap-2">
+                                                                                <div class="flex w-full flex-col gap-1 juice:empty:hidden juice:first:pt-[3px]">
+                                                                                    <div class="markdown prose w-full break-words dark:prose-invert light">
+                                                                                        <p>Las declaraciones en una póliza de seguro son una parte fundamental del contrato de seguro. Contienen información clave y específica sobre la póliza, el asegurado y el riesgo asegurado. Aquí tienes una descripción más detallada de lo que suelen incluir las declaraciones:</p>
+                                                                                        <ol>
+                                                                                            <li>
+                                                                                                <p><strong>Información del asegurado</strong>:</p>
+                                                                                                <ul>
+                                                                                                    <li><strong>Nombre y dirección del asegurado</strong>: Datos personales o de la entidad que está comprando el seguro.</li>
+                                                                                                    <li><strong>Información de contacto</strong>: Teléfono, correo electrónico, etc.</li>
+                                                                                                </ul>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <p><strong>Información del asegurador</strong>:</p>
+                                                                                                <ul>
+                                                                                                    <li><strong>Nombre y dirección de la compañía aseguradora</strong>.</li>
+                                                                                                    <li><strong>Información de contacto de la aseguradora</strong>.</li>
+                                                                                                </ul>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <p><strong>Descripción del riesgo asegurado</strong>:</p>
+                                                                                                <ul>
+                                                                                                    <li><strong>Detalles del bien o persona asegurada</strong>: Por ejemplo, en un seguro de automóvil, la marca, modelo, año y número de identificación del vehículo.</li>
+                                                                                                    <li><strong>Ubicación del riesgo</strong>: En seguros de propiedad, la dirección del inmueble asegurado.</li>
+                                                                                                </ul>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <p><strong>Período de cobertura</strong>:</p>
+                                                                                                <ul>
+                                                                                                    <li><strong>Fecha de inicio y fecha de término de la póliza</strong>.</li>
+                                                                                                    <li><strong>Duración de la cobertura</strong>.</li>
+                                                                                                </ul>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <p><strong>Límites de cobertura</strong>:</p>
+                                                                                                <ul>
+                                                                                                    <li><strong>Montos máximos de cobertura</strong>: Especifica el límite máximo que la aseguradora pagará en caso de un siniestro.</li>
+                                                                                                </ul>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <p><strong>Prima del seguro</strong>:</p>
+                                                                                                <ul>
+                                                                                                    <li><strong>Costo del seguro</strong>: El monto que el asegurado debe pagar para mantener la cobertura, y la frecuencia de estos pagos (mensuales, trimestrales, anuales, etc.).</li>
+                                                                                                </ul>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <p><strong>Deducibles</strong>:</p>
+                                                                                                <ul>
+                                                                                                    <li><strong>Monto deducible</strong>: La cantidad que el asegurado debe pagar de su propio bolsillo antes de que la aseguradora cubra el resto de los costos.</li>
+                                                                                                </ul>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <p><strong>Cobertura específica y exclusiones</strong>:</p>
+                                                                                                <ul>
+                                                                                                    <li><strong>Detalles de lo que está cubierto y lo que no está cubierto por la póliza</strong>.</li>
+                                                                                                </ul>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <p><strong>Condiciones especiales o endosos</strong>:</p>
+                                                                                                <ul>
+                                                                                                    <li><strong>Modificaciones adicionales</strong>: Cualquier ajuste o adición específica a la póliza original que se haya acordado.</li>
+                                                                                                </ul>
+                                                                                            </li>
+                                                                                        </ol>
+                                                                                        <p>Las declaraciones son cruciales porque proporcionan un resumen claro y detallado de los términos y condiciones del contrato de seguro, estableciendo las bases para cualquier reclamación futura y ayudando a evitar malentendidos entre el asegurado y la aseguradora.</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                        <div class="pr-2 lg:pr-0"></div>
+                                                                        <div class="mt-3 w-full empty:hidden">
+                                                                            <div class="text-center"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="chat-text-left">
+                                        <p class="mb-0 text-semi-muted"> What do you think about our plans for this product launch? </p>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="app-menu">
+            <ul class="nav nav-tabs card-header-tabs ml-0 mr-0 mb-1" role="tablist">
+                <li class="nav-item w-50 text-center">
+                    <a class="nav-link active" id="first-tab" data-toggle="tab" href="#firstFull" role="tab" aria-selected="true">Consultas</a>
+                </li>
+                <!-- <li class="nav-item w-50 text-center">
+                    <a class="nav-link" id="second-tab" data-toggle="tab" href="#secondFull" role="tab" aria-selected="false">Contacts</a>
+                </li> -->
+            </ul>
+            <div class="p-4 h-100">
+                <!-- <div class="form-group">
+                    <input type="text" class="form-control rounded" placeholder="Search">
+                </div> -->
+                <div class="tab-content h-100">
+                    <div class="tab-pane fade show active  h-100" id="firstFull" role="tabpanel" aria-labelledby="first-tab">
+                        <div class="scroll">
+                            <div class="d-flex flex-row mb-1 border-bottom pb-3 mb-3">
+                                <!-- <a class="d-flex" href="#">
+                                    <img alt="Profile Picture" src="img/profiles/l-1.jpg" class="img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
+                                </a> -->
+                                <div class="d-flex flex-grow-1 min-width-zero">
+                                    <div class="pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
+                                        <div class="min-width-zero">
+                                            <a href="#">
+                                                <p class=" mb-0 truncate">Información sobre polizas</p>
+                                            </a>
+                                            <p class="mb-1 text-muted text-small">9:25</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row mb-1 border-bottom pb-3 mb-3">
+                                <!-- <a class="d-flex" href="#">
+                                    <img alt="Profile Picture" src="img/profiles/l-2.jpg" class="img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
+                                </a> -->
+                                <div class="d-flex flex-grow-1 min-width-zero">
+                                    <div class="pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
+                                        <div class="min-width-zero">
+                                            <a href="#">
+                                                <p class=" mb-0 truncate">¿que son las declaraciones?</p>
+                                            </a>
+                                            <p class="mb-1 text-muted text-small">9:30</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="tab-pane fade  h-100" id="secondFull" role="tabpanel" aria-labelledby="second-tab">
+                        <div class="scroll">
+                            <div class="d-flex flex-row mb-3 border-bottom pb-3">
+                                <a class="d-flex" href="#">
+                                    <img alt="Profile Picture" src="img/profiles/l-1.jpg" class="img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
+                                </a>
+                                <div class="d-flex flex-grow-1 min-width-zero">
+                                    <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
+                                        <div class="min-width-zero">
+                                            <a href="#">
+                                                <p class="mb-0 truncate">Sarah Kortney</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row mb-3 border-bottom pb-3">
+                                <a class="d-flex" href="#">
+                                    <img alt="Profile Picture" src="img/profiles/l-2.jpg" class="img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
+                                </a>
+                                <div class="d-flex flex-grow-1 min-width-zero">
+                                    <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
+                                        <div class="min-width-zero">
+                                            <a href="#">
+                                                <p class="mb-0 truncate">Williemae Lagasse</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row mb-3 border-bottom pb-3">
+                                <a class="d-flex" href="#">
+                                    <img alt="Profile Picture" src="img/profiles/l-3.jpg" class="img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
+                                </a>
+                                <div class="d-flex flex-grow-1 min-width-zero">
+                                    <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
+                                        <div class="min-width-zero">
+                                            <a href="#">
+                                                <p class="mb-0 truncate">Tommy Nash</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row mb-3 border-bottom pb-3">
+                                <a class="d-flex" href="#">
+                                    <img alt="Profile Picture" src="img/profiles/l-4.jpg" class="img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
+                                </a>
+                                <div class="d-flex flex-grow-1 min-width-zero">
+                                    <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
+                                        <div class="min-width-zero">
+                                            <a href="#">
+                                                <p class="mb-0 truncate">Mayra Sibley</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row mb-3 border-bottom pb-3">
+                                <a class="d-flex" href="#">
+                                    <img alt="Profile Picture" src="img/profiles/l-5.jpg" class="img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
+                                </a>
+                                <div class="d-flex flex-grow-1 min-width-zero">
+                                    <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
+                                        <div class="min-width-zero">
+                                            <a href="#">
+                                                <p class="mb-0 truncate">Kathryn Mengel</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row mb-3 border-bottom pb-3">
+                                <a class="d-flex" href="#">
+                                    <img alt="Profile Picture" src="img/profiles/l-2.jpg" class="img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
+                                </a>
+                                <div class="d-flex flex-grow-1 min-width-zero">
+                                    <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
+                                        <div class="min-width-zero">
+                                            <a href="#">
+                                                <p class="mb-0 truncate">Williemae Lagasse</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row mb-3 border-bottom pb-3">
+                                <a class="d-flex" href="#">
+                                    <img alt="Profile Picture" src="img/profiles/l-3.jpg" class="img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
+                                </a>
+                                <div class="d-flex flex-grow-1 min-width-zero">
+                                    <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
+                                        <div class="min-width-zero">
+                                            <a href="#">
+                                                <p class="mb-0 truncate">Tommy Nash</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row mb-3 border-bottom pb-3">
+                                <a class="d-flex" href="#">
+                                    <img alt="Profile Picture" src="img/profiles/l-4.jpg" class="img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
+                                </a>
+                                <div class="d-flex flex-grow-1 min-width-zero">
+                                    <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
+                                        <div class="min-width-zero">
+                                            <a href="#">
+                                                <p class="mb-0 truncate">Mayra Sibley</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row mb-3 border-bottom pb-3">
+                                <a class="d-flex" href="#">
+                                    <img alt="Profile Picture" src="img/profiles/l-3.jpg" class="img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
+                                </a>
+                                <div class="d-flex flex-grow-1 min-width-zero">
+                                    <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
+                                        <div class="min-width-zero">
+                                            <a href="#">
+                                                <p class="mb-0 truncate">Tommy Nash</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row mb-3 border-bottom pb-3">
+                                <a class="d-flex" href="#">
+                                    <img alt="Profile Picture" src="img/profiles/l-4.jpg" class="img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
+                                </a>
+                                <div class="d-flex flex-grow-1 min-width-zero">
+                                    <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
+                                        <div class="min-width-zero">
+                                            <a href="#">
+                                                <p class="mb-0 truncate">Mayra Sibley</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row mb-3 border-bottom pb-3">
+                                <a class="d-flex" href="#">
+                                    <img alt="Profile Picture" src="img/profiles/l-5.jpg" class="img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
+                                </a>
+                                <div class="d-flex flex-grow-1 min-width-zero">
+                                    <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
+                                        <div class="min-width-zero">
+                                            <a href="#">
+                                                <p class="mb-0 truncate">Kathryn Mengel</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row mb-3 border-bottom pb-3">
+                                <a class="d-flex" href="#">
+                                    <img alt="Profile Picture" src="img/profiles/l-2.jpg" class="img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
+                                </a>
+                                <div class="d-flex flex-grow-1 min-width-zero">
+                                    <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
+                                        <div class="min-width-zero">
+                                            <a href="#">
+                                                <p class="mb-0 truncate">Williemae Lagasse</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row mb-3 border-bottom pb-3">
+                                <a class="d-flex" href="#">
+                                    <img alt="Profile Picture" src="img/profiles/l-3.jpg" class="img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
+                                </a>
+                                <div class="d-flex flex-grow-1 min-width-zero">
+                                    <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
+                                        <div class="min-width-zero">
+                                            <a href="#">
+                                                <p class="mb-0 truncate">Tommy Nash</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row mb-3 pb-3">
+                                <a class="d-flex" href="#">
+                                    <img alt="Profile Picture" src="img/profiles/l-4.jpg" class="img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
+                                </a>
+                                <div class="d-flex flex-grow-1 min-width-zero">
+                                    <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
+                                        <div class="min-width-zero">
+                                            <a href="#">
+                                                <p class="mb-0 truncate">Mayra Sibley</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="app-menu-button d-inline-block d-xl-none" href="#">
+                <i class="simple-icon-options"></i>
+            </a>
+        </div>
+        <div class="chat-input-container d-flex justify-content-between align-items-center">
+            <input class="form-control flex-grow-1" type="text" placeholder="Escibe algo ...">
+            <div>
+                <button type="button" class="btn btn-outline-primary icon-button large">
+                    <i class="simple-icon-paper-clip"></i>
+                </button>
+                <button type="button" class="btn btn-primary icon-button large">
+                    <i class="simple-icon-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+    <script src="js/vendor/jquery-3.3.1.min.js"></script>
+    <script src="js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="js/vendor/perfect-scrollbar.min.js"></script>
+    <script src="js/vendor/mousetrap.min.js"></script>
+    <script src="js/dore.script.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

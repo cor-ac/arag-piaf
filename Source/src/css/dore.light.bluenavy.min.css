@@ -688,13 +688,14 @@ button {
 	border-color: #ececec;
 }
 .btn-outline-primary {
-	color: #00365a;
+	color: #fff;
+	background-color: #00365a;
 	border-color: #00365a;
 }
 .btn-outline-primary:hover {
 	color: #fff;
-	background-color: #00365a;
-	border-color: #00365a;
+	background-color: #0d507d;
+	border-color: #0d507d;
 }
 .btn-outline-theme-3 {
 	background: unset;
