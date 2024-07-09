@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+
+  <body>
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+
+    <script>
+      window.botpressWebChat.init({
+        // Replace <your-bot-id> and <your-client-id> with your actual bot and client IDs
+        botId: "2e4bed67-b104-4a01-97e1-adb058814d1b",
+        clientId: "2e4bed67-b104-4a01-97e1-adb058814d1b",
+
+        // Set the URL for the Botpress WebChat JavaScript file and the messaging server
+        hostUrl: "https://cdn.botpress.cloud/webchat/v1",
+        messagingUrl: "https://messaging.botpress.cloud",
+        avatarUrl:
+          "https://cor-ac.github.io/arag-piaf/Source/src/logos/Home_Logo.png",
+        stylesheet:
+          "https://webchat-styler-css.botpress.app/prod/code/bb632c0e-9a16-45ca-85e7-eababbbe53d6/v11173/style.css",
+        useSessionStorage: true,
+        //enableConversationDeletion: true,
+        composerPlaceholder: "Escribe aqui...",
+        botConversationDescription: "Te ayudo con tu dia a dia en la NASA",
+        webhookId: "a705aa00-1f4e-48ba-bcb1-86b962a6a021",
+        lazySocket: true,
+        frontendVersion: "v1",
+
+        // Set the name of the bot that will be displayed in the WebChat interface
+        botName: "Nasaito",
+
+        // Set the width of the WebChat container and layout to 100% (Full Screen)
+        containerWidth: "100%25",
+        layoutWidth: "100%25",
+
+        // Hide the widget and disable animations
+        hideWidget: true,
+        disableAnimations: true,
+      });
+
+      // Opens up the Chatbot by default
+      // This lets users start chatting with the Chatbot without needing to click any buttons or menus.
+      window.botpressWebChat.onEvent(
+        function () {
+          window.botpressWebChat.sendEvent({ type: "show" });
+        },
+        ["LIFECYCLE.LOADED"]
+      );
+    </script>
+  </body>
+</html>
