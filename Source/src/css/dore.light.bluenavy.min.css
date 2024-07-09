@@ -1583,7 +1583,7 @@ button {
 .logo {
 	width: 110px;
 	height: 75px;
-	background: url(../logos/Home_Logo.png) no-repeat;
+	background: url("../logos/Home_Logo.png") no-repeat;
 	background-position: center center;
 	background-size: contain;
 	margin: 0 auto;
@@ -1602,7 +1602,7 @@ button {
 .logo-mobile {
 	width: 35px;
 	height: 35px;
-	background: url(../logos/Home_Logo.png) no-repeat;
+	background: url("../logos/Home_Logo.png") no-repeat;
 	background-size: contain;
 	background-position: center center;
 }
